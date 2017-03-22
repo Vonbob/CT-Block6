@@ -4,10 +4,11 @@
     height: auto;
 }
 
+
+
 .container {
     width: 1160px;
     margin: 0 auto;
-    height: auto;
 }
 
 .pull-left {
@@ -23,49 +24,35 @@
 }
 
 
-/* Home Section */
-
-.home {
-    position: relative; 
+/* Header (Home Section) */
+header {
+    height: 543px;
+    background: 
+        url("../images/home/bg_shade.png") no-repeat,
+        url("../images/home/bg.png") no-repeat;
+    background-size: 100% auto;
 }
 
-.home > img {
-    width: 100%;
-    display: block;
+/* Header -> Navigation Bar */
+img.logo {
+    float: left;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top: 5px;
 }
 
-.top-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.top-bar > img {
-    width: 100%;
-}
-
-.logo {
-    position: absolute;
-    top: 10px;
-    left: 100px;
-}
-
-.navigation {
-    position: absolute;
-    top: 30px; 
-    left: 350px;
-}
-
-.navigation > ul {
+ul.navigation {
+    float: left;
+    margin-top: 45px;
     list-style: none;
     padding-left: 0;
 }
 
-.navigation > ul > li {
+ul.navigation > li {
     display: inline-block;
 }
 
-.navigation > ul > li > a {
+ul.navigation > li > a {
     display: block;
     text-decoration: none;
     color: white;
@@ -74,55 +61,51 @@
     margin-right: 20px;
 }
 
-.social {
-    position: absolute;
-    top: 45px;
-    right: 140px;
+ul.social {
+    float: left;
+    margin-top: 45px;
+    list-style: none;
+    padding-left: 0;
 }
 
-.social a {
+ul.social > li {
     display: inline-block;
-    text-decoration: none;
+}
+
+ul.social > li > a > img {
     margin-left: 10px;
 }
 
-.social a:last-child {
+ul.social > li:last-child > a > img {
     margin-left: 5px;
 }
 
+/* Header -> Page Title */
 .page-title {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 160px;
-    text-align: center;    
+    width: 700px;
+    margin: 60px auto 0;
+    text-align: center;   
 }
 
 .page-title > h1 {
-    margin: 0 auto;
     color: white;
     font-family: "Yeseva One", cursive;
     font-size: 60px;
-    width: 700px;
     font-weight: normal;
+    margin: 0;
 }
 
 .page-title > img {
     margin-top: 20px;
 }
 
+/* Header -> Page Controls (buttons)*/
 .page-control {
-    width: 100%;
-    position: absolute;
-    top: 400px;
-}
-
-.buttons {
     width: 360px;
-    margin: 0 auto;
+    margin: 20px auto 0;
 }
 
-.buttons a {
+.page-control > a {
     display: block;
     text-decoration: none;
     font-family: Lato, sans-serif;
@@ -131,14 +114,15 @@
     padding: 12px 26px;
 }
 
-.button.pull-left a {
+.page-control a.pull-left {
     background-color:  rgba(0, 0, 0, 0.7);
     opacity: 0.8;
 }
 
-.button.pull-right a {
-    background-color:  rgba(255, 255, 255, 0.28); 
+.page-control a.pull-right {
+    background-color:  rgba(255, 255, 255, 0.28);
 }
+
 /* ------------------------------------------------------------- */
 
 /* About Section */
@@ -146,6 +130,12 @@
 .about {
     background-image: url("../images/about/section_bg.png");
     height: 500px;
+}
+
+.about > img {
+    width: 420px;
+    margin-top: 45px;
+    margin-right: 150px;
 }
 
 .about-info {
@@ -177,33 +167,21 @@
     margin: 0 auto;
 }
 
-.about-image {
-    width: 420px;
-    margin-top: 45px;
-    margin-right: 150px;
-}
 
-.about-image > img {
-    width: 100%;
-}
 /* ------------------------------------------------------------- */
 
 
 /* Ingredients Section */
 
 .ingredients {
-    position: relative;
-}
-
-.ingredients > img {
-    display: block;
-    width: 100%;
+    background: url("../images/ingredients/ingredients_bg.png") no-repeat;
+    background-size: 100% auto;
+    height: 548px;
 }
 
 .ingredients-info {
-    position: absolute;
-    top: 60px;
-    right: 100px;
+    margin-top: 60px;
+    margin-right: 100px;
     width: 500px;
     background-image: url("../images/ingredients/ingredients_info_bg.png");
     text-align: center;
@@ -211,7 +189,6 @@
 
 .ingredients-info > h2 {
     font-family: "Yeseva One", cursive;
-    text-align: center;
     color: white;
     margin-top: 50px;
 }
@@ -345,23 +322,13 @@
 /* Reviews Section */
 
 .reviews {
-    position: relative;
-}
-
-.reviews > img {
-    display: block;
-    width: 100%;
-}
-
-.reviews-content {
-    position: absolute;
-    left: 0;
-    top: 40px;
-    width: 100%;
+    background: url("../images/reviews/reviews_bg.png") no-repeat;
+    background-size: 100% auto;
+    height: 549px;
 }
 
 .review {
-    margin: 0 auto;
+    margin: 50px auto 0;
     width: 480px;
     background-image: url("../images/reviews/reviews_header_bg.png");
     text-align: center;
