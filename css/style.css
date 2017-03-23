@@ -279,36 +279,39 @@ ul.social > li:last-child > a > img {
 }
 
 .dish-special {
-    position: relative;
-    border-left: 1px solid #e7d297;
-    border-right: 1px solid #c89f2d;
+    margin-top: 20px;
+    width: 380px;
+    overflow: hidden;
+}
+
+.dish-special > .tab {
+    float: right;
 }
 
 .dish-special > .top-border {
-    width: 380px;
+    float: right;
+    width: 379px;
     height: 1px;
     background: linear-gradient(to left, #c89f2d, #e7d297);
-    position: absolute;
-    top: 0;
-    left: 0px;
 }
+
+.dish-special > .dish {
+    float: right;
+    margin-top: 0;
+    border-left: 1px solid #e7d297;
+    border-right: 1px solid #c89f2d;
+    width: 358px;
+}
+
 
 .dish-special > .bottom-border {
-    width: 380px;
+    float: right;
+    width: 379px;
     height: 1px;
     background: linear-gradient(to left, #c89f2d, #e7d297);
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
-.tab {
-    position: absolute;
-    right: -1px;
-    top: -28px;
-}
-
-.tab > p {
+.dish-special > .tab > p {
     font-family: Lato, sans-serif;
     color:  #f8fafa;
     font-size: 11px;
@@ -316,6 +319,7 @@ ul.social > li:last-child > a > img {
     line-height: 1.6em;
     padding-left: 14px;
     padding-right: 14px;
+    margin: 0;
 }
 /* ------------------------------------------------------------- */
 
